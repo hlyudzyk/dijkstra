@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/style.css">
+<title>Dynamic Graph Entry</title>
+</head>
+<body>
+  <h2>Enter Graph:</h2>
+  <textarea id="graphInput" rows="10" cols="50" placeholder="Example: A: B 1, C 4
+  B: A 1, C 2, D 5
+  C: A 4, B 2, D 1
+  D: B 5, C 1"></textarea>
+  <br>
+  <label for="nodeSelect">Select a node:</label>
+  <select id="nodeSelect"></select>
+  <br>
+  <button onclick="parseGraphFromTextArea()">Parse Graph</button>
+  <button onclick="viewGraph()">View Graph</button>
+  <br>
+  <h2>Result:</h2>
+  <div id="result"></div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
+
